@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bitmap_utils.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="minimal.cpp" />
     <ClCompile Include="model_utils.cpp" />
     <ClCompile Include="win_utils.cpp" />
   </ItemGroup>
