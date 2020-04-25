@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bitmap_utils.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="model_utils.cpp" />
+    <ClCompile Include="win_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="models\mobilenet_v1_1.0_224_quant_edgetpu.tflite">
@@ -38,6 +41,19 @@
     <CopyFileToFolders Include="lib\tensorflowlite.dll">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
       <FileType>Document</FileType>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitmap_utils.h" />
+    <ClInclude Include="model_utils.h" />
+    <ClInclude Include="win_utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="images\resized_cat.bmp">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
