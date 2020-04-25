@@ -23,5 +23,11 @@
     <None Include="lib\edgetpu.dll">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="lib\tensorflowlite.dll">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="models\mobilenet_v1_1.0_224_quant_edgetpu.tflite">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
