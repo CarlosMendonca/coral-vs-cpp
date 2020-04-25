@@ -1,0 +1,2 @@
+mklink /d .\coral\ConsoleApplication\include\flatbuffers ..\..\..\third-party\tensorflow\tensorflow\lite\tools\make\downloads\flatbuffers\include\flatbuffers
+mklink /d .\coral\ConsoleApplication\include\tensorflow  ..\..\..\third-party\tensorflow\tensorflow

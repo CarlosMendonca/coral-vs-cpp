@@ -40,13 +40,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CopyFileToFolders Include="models\mobilenet_v1_1.0_224_quant_edgetpu.tflite" />
-    <CopyFileToFolders Include="lib\edgetpu.dll" />
-    <CopyFileToFolders Include="lib\tensorflowlite.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="images\resized_cat.bmp">
+    <CopyFileToFolders Include="images\resized_cat.bmp">
       <Filter>Resource Files</Filter>
-    </Image>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="lib\edgetpu.dll">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="models\mobilenet_v1_1.0_224_quant_edgetpu.tflite">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="lib\tensorflowlite.dll">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
