@@ -6,5 +6,6 @@ To compile the console application, make sure you hydrate the TensorFlow submodu
 On the repository root:
 ```
 git submodule update --init --recursive
-mklink /d coral\ConsoleApplication\include\tensorflow third-party\tensorflow\tensorflow
+wsl ./third-party/tensorflow/tensorflow/lite/tools/make/download_dependencies.sh
+make-ntfs-junctions.bat
 ```
